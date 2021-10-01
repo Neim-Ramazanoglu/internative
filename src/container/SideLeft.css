@@ -1,0 +1,37 @@
+.leftMenu {
+  height: 900px;
+  width: 240px;
+  position: fixed;
+}
+
+.nav_link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav_group {
+  background-color: #ffffff;
+  color: #999999;
+  border-radius: 10px;
+  width: 176px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+  margin-left: 29px;
+}
+
+.nav_group:hover {
+  background-color: #5372e7;
+  color: #ffffff;
+}
+.nav_group:hover img {
+  color: #ffffff;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  color: #999999;
+}

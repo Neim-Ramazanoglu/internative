@@ -1,0 +1,63 @@
+<svg
+        id="Frame_7"
+        data-name="Frame 7"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <defs>
+          <clipPath id="clip-path">
+            <rect
+              id="Frame_7_Background_Mask_"
+              data-name="Frame 7 (Background/Mask)"
+              width="24"
+              height="24"
+              fill="none"
+            />
+          </clipPath>
+        </defs>
+        <rect
+          id="Frame_7_Background_Mask_2"
+          data-name="Frame 7 (Background/Mask)"
+          width="24"
+          height="24"
+          fill="none"
+        />
+        <g id="Frame_7-2" data-name="Frame 7" clip-path="url(#clip-path)">
+          <g
+            id="Rectangle_794"
+            data-name="Rectangle 794"
+            transform="translate(3 2)"
+            fill="none"
+            stroke="#999"
+            stroke-width="1"
+            stroke-dasharray="0 0"
+          >
+            <rect width="12" height="20" rx="2" stroke="none" />
+            <rect x="0.5" y="0.5" width="11" height="19" rx="1.5" fill="none" />
+          </g>
+          <rect
+            id="Rectangle_795"
+            data-name="Rectangle 795"
+            width="7"
+            height="4"
+            rx="2"
+            transform="translate(10 10)"
+            fill="#fff"
+          />
+          <path
+            id="Vector"
+            d="M5.833,4h0V0L10,4,5.833,8Z"
+            transform="translate(12 8)"
+            fill="none"
+            stroke="#999"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            stroke-width="1.2"
+            stroke-dasharray="0 0"
+          />
+        </g>
+      </svg>

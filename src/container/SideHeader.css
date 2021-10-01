@@ -1,0 +1,44 @@
+.leftHeaderLogo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #5372e7;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+}
+
+.logoName {
+  height: 42px;
+  width: 59px;
+  color: #5372e7;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 39px;
+  margin-left: 29px;
+  margin-bottom: 47px;
+}
+
+.logOut {
+  background-color: #ffffff;
+  color: #999999;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-left: 29px;
+  margin-top: 381px;
+  margin-bottom: 53px;
+  width: 176px;
+  height: 50px;
+  padding: 13px 16px;
+  border-radius: 10px;
+}
+
+.logOut:hover {
+  background-color: #5372e7;
+  color: #ffffff;
+}

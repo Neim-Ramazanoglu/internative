@@ -1,0 +1,11 @@
+<svg id="_31" data-name="31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="_31_Background_Mask_" data-name="31 (Background/Mask)" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="_31_Background_Mask_2" data-name="31 (Background/Mask)" width="24" height="24" fill="none"/>
+  <g id="_31-2" data-name="31" clip-path="url(#clip-path)">
+    <path id="Vector" d="M2,14.99a2.006,2.006,0,0,1-2-2V2A2.006,2.006,0,0,1,2,0H17.71a2.006,2.006,0,0,1,2,2V12.99a2,2,0,0,1-2,2Z" transform="translate(2.6 5.31)" fill="none" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2" stroke-dasharray="0 0"/>
+  </g>
+</svg>
