@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavButton } from "../component/NavButton";
+import NavButton from "../component/NavButton/navButton";
 import styles from "./SideLeft.css";
 import topluluk from "../icons/topluluk.svg";
 import panel from "../icons/panel.svg";
@@ -16,12 +16,12 @@ const navigations = [
   {
     text: "Odalar",
     icon: oda,
-    to: "/explore",
+    to: "/rooms",
   },
   {
     text: "Topluluk",
     icon: topluluk,
-    to: "/notification",
+    to: "/society",
   },
   {
     text: "Mesajlar",
@@ -31,7 +31,7 @@ const navigations = [
   {
     text: "İstatistikler",
     icon: istatistik,
-    to: "/bookmarks",
+    to: "/statistics",
   },
 ];
 

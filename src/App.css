@@ -25,3 +25,19 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.calender {
+  text-align: center;
+  width: 295px;
+  height: 448px;
+}
+.appointment {
+  width: 823px;
+  height: 484px;
+}
