@@ -1,0 +1,43 @@
+.userContainer {
+  width: 186px;
+  height: 70px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  margin-top: 40px;
+  margin-right: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userName {
+  width: 54px;
+  height: 19px;
+  font-size: 14pt;
+  color: #333333;
+  padding-left: 20px;
+  padding-right: 24px;
+  padding-bottom: 7px;
+}
+.userJob {
+  width: 61px;
+  height: 12px;
+  font-size: 10pt;
+  color: #999999;
+}
+.userPic {
+  width: 32px;
+  height: 32px;
+}
+.info {
+  text-align: center;
+}
+
+.userMainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification {
+  margin-top: 40px;
+}

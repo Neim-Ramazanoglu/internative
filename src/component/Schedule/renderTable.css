@@ -1,0 +1,8 @@
+tr,
+th {
+  background-color: sienna;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+}

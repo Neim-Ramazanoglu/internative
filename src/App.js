@@ -3,7 +3,9 @@ import SideLeft from "./container/SideLeft";
 import { BrowserRouter as Router } from "react-router-dom";
 import SideHeader from "./container/SideHeader";
 import LogOut from "./container/LogOut";
-import DataPicker from "./component/DataPicker/DataPicker";
+import UserInfo from "./component/UserInfo/UserInfo";
+import DayPicker from "../src/component/DayPicker/DayPicker";
+import RenderTable from "./component/Schedule/RenderTable";
 
 function App() {
   return (
@@ -15,10 +17,13 @@ function App() {
           <LogOut />
         </Router>
       </div>
-      <div className="appointment">Appointment</div>
+      <div className="appointment">
+        <RenderTable />
+      </div>
 
       <div className="calender">
-        <DataPicker />
+        <UserInfo />
+        <DayPicker />
       </div>
     </div>
   );

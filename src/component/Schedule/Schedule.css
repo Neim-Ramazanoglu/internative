@@ -1,0 +1,16 @@
+td {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  background-color: seagreen;
+  width: 12%;
+  border: 2px solid black;
+}
+
+p {
+  text-align: left;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+}
