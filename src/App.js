@@ -8,6 +8,8 @@ import DayPicker from "../src/component/DayPicker/DayPicker";
 import RenderTable from "./component/Schedule/RenderTable";
 import Datepicker from "./component/Schedule/DatePicker";
 import Navbar from "./component/Schedule/Navbar";
+import React, { useState } from "react";
+import Pop from "./component/PopUp/Pop";
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
         <Navbar />
         <Datepicker />
         <RenderTable />
+        <Pop />
       </div>
 
       <div className="calender">
