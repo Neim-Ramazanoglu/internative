@@ -28,7 +28,7 @@ function Datepicker() {
         <button>{">"}</button>
       </div>
       <div className="dropdown">
-        <select>
+        <select value={monthName}>
           {list.map((x) => (
             <option key={x} value={x}>
               {x}

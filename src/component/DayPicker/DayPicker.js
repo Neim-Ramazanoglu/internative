@@ -1,48 +1,72 @@
 import React from "react";
 import DayPicker, { DateUtils } from "react-day-picker";
 import "react-day-picker/lib/style.css";
+import { useState } from "react";
 
-export default class Example extends React.Component {
-  static defaultProps = {
-    numberOfMonths: 1,
+function Example(props) {
+  const {
+    dates,
+    setDates,
+    handleResetClick,
+    handleDayClick,
+    date,
+    selectDateClick,
+  } = props;
+  // static defaultProps = {
+  //   numberOfMonths: 1,
+  // };
+
+  // constructor(props) {
+  //   super(props);
+  //   this.handleDayClick = this.handleDayClick.bind(this);
+  //   this.handleResetClick = this.handleResetClick.bind(this);
+  //   this.state = this.getInitialState();
+  // }
+
+  // getInitialState() {
+  //   return {
+  //     from: undefined,
+  //     to: undefined,
+  //   };
+  // }
+
+  // handleDayClick(day) {
+  //   const range = DateUtils.addDayToRange(day, this.state);
+  //   this.setState(range);
+  // }
+
+  // handleResetClick() {
+  //   this.setState(this.getInitialState());
+  // }
+
+  // const { from, to } = currentDay;
+  const modifiers = {
+    start: dates.from,
+    end: dates.to,
   };
-
-  constructor(props) {
-    super(props);
-    this.handleDayClick = this.handleDayClick.bind(this);
-    this.handleResetClick = this.handleResetClick.bind(this);
-    this.state = this.getInitialState();
-  }
-
-  getInitialState() {
-    return {
-      from: undefined,
-      to: undefined,
-    };
-  }
-
-  handleDayClick(day) {
-    const range = DateUtils.addDayToRange(day, this.state);
-    this.setState(range);
-  }
-
-  handleResetClick() {
-    this.setState(this.getInitialState());
-  }
-
-  render() {
-    const { from, to } = this.state;
-    const modifiers = { start: from, end: to };
-    return (
-      <div className="RangeExample">
-        <DayPicker
-          className="Selectable"
-          numberOfMonths={this.props.numberOfMonths}
-          selectedDays={[from, { from, to }]}
-          modifiers={modifiers}
-          onDayClick={this.handleDayClick}
-        />
-        <style>{`
+  return (
+    <div className="RangeExample">
+      <p>
+        {!dates.from && !dates.to && "Please select the first day."}
+        {dates.from && !dates.to && "Please select the last day."}
+        {dates.from &&
+          dates.to &&
+          `Selected from ${dates.from.toLocaleDateString()} to
+                ${dates.to.toLocaleDateString()}`}{" "}
+        {dates.from && dates.to && (
+          <button className="link" onClick={handleResetClick}>
+            Reset
+          </button>
+        )}
+      </p>
+      <DayPicker
+        className="Selectable"
+        numberOfMonths={dates.numberOfMonths}
+        selectedDays={[dates.from, dates.to]}
+        modifiers={modifiers}
+        onDayClick={handleDayClick}
+      />
+      <style>{`
   .Selectable .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
     background-color: #f0f8ff !important;
     color: #4a90e2;
@@ -58,7 +82,7 @@ export default class Example extends React.Component {
     border-radius:6px !important;
   }
 `}</style>
-      </div>
-    );
-  }
+    </div>
+  );
 }
+export default Example;
