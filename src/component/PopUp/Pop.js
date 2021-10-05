@@ -21,6 +21,11 @@ function Pop(props) {
   const toggleCalendarPopUp = () => {
     setIsShown(!isShown);
   };
+  function dateChecker(from, to) {
+    if (from && to) {
+      return from.toLocaleDateString() + " - " + to.toLocaleDateString();
+    }
+  }
 
   return (
     <div>
@@ -64,7 +69,7 @@ function Pop(props) {
                   <input
                     onClick={toggleCalendarPopUp}
                     placeholder="Lütfen bir tarih aralığı seçiniz"
-                    value={dates.from}
+                    value={dateChecker(dates?.from, dates?.to)}
                   ></input>
                   {isShown && (
                     <CalendarPopUp
