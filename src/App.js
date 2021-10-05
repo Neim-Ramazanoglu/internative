@@ -12,30 +12,8 @@ import Pop from "./component/PopUp/Pop";
 import DayPicker, { DateUtils } from "react-day-picker";
 
 export default function App() {
-  // constructor(props) {
-  //   super(props);
-  //   this.handleDayClick = this.handleDayClick.bind(this);
-  //   this.handleResetClick = this.handleResetClick.bind(this);
-  //   // this.state = this.getInitialState();
-  //   useState = { from: "", to: "" };
-  // }
   const initialState = { from: "", to: "" };
   const [dates, setDates] = useState({ initialState });
-
-  const selectedDate = { from: "", to: "" };
-  const [date, setSelectedDate] = useState({ selectedDate });
-  // getInitialState() {
-  //   return {
-  //     from: undefined,
-  //     to: undefined,
-  //   };
-  // }
-  const selectDateClick = (from, to) => {
-    debugger;
-    if (from && to) {
-      console.log(from);
-    }
-  };
 
   const handleDayClick = (day) => {
     const range = DateUtils.addDayToRange(day, dates);
@@ -64,8 +42,6 @@ export default function App() {
           setDates={setDates}
           handleDayClick={handleDayClick}
           handleResetClick={handleResetClick}
-          date={date}
-          selectDateClick={selectDateClick}
         />
       </div>
 

@@ -3,14 +3,7 @@ import Popup from "./PopUp";
 import DayPicker from "../DayPicker/DayPicker";
 import CalendarPopUp from "./CalendarPopUp";
 function Pop(props) {
-  const {
-    dates,
-    setDates,
-    handleResetClick,
-    handleDayClick,
-    date,
-    selectDateClick,
-  } = props;
+  const { dates, setDates, handleResetClick, handleDayClick } = props;
 
   const [isOpen, setIsOpen] = useState(false);
   const [isShown, setIsShown] = useState(false);
@@ -80,8 +73,6 @@ function Pop(props) {
                             setDates={setDates}
                             handleDayClick={handleDayClick}
                             handleResetClick={handleResetClick}
-                            date={date}
-                            selectDateClick={selectDateClick}
                           />
                           <button>İptal</button>
                           <button onClick={toggleCalendarPopUp}>Tamam</button>

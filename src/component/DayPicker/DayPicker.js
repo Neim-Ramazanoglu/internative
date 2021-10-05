@@ -4,14 +4,7 @@ import "react-day-picker/lib/style.css";
 import { useState } from "react";
 
 function Example(props) {
-  const {
-    dates,
-    setDates,
-    handleResetClick,
-    handleDayClick,
-    date,
-    selectDateClick,
-  } = props;
+  const { dates, setDates, handleResetClick, handleDayClick } = props;
   // static defaultProps = {
   //   numberOfMonths: 1,
   // };
@@ -46,19 +39,6 @@ function Example(props) {
   };
   return (
     <div className="RangeExample">
-      <p>
-        {!dates.from && !dates.to && "Please select the first day."}
-        {dates.from && !dates.to && "Please select the last day."}
-        {dates.from &&
-          dates.to &&
-          `Selected from ${dates.from.toLocaleDateString()} to
-                ${dates.to.toLocaleDateString()}`}{" "}
-        {dates.from && dates.to && (
-          <button className="link" onClick={handleResetClick}>
-            Reset
-          </button>
-        )}
-      </p>
       <DayPicker
         className="Selectable"
         numberOfMonths={dates.numberOfMonths}
