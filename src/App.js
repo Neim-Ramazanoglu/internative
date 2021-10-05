@@ -6,6 +6,8 @@ import LogOut from "./container/LogOut";
 import UserInfo from "./component/UserInfo/UserInfo";
 import DayPicker from "../src/component/DayPicker/DayPicker";
 import RenderTable from "./component/Schedule/RenderTable";
+import Datepicker from "./component/Schedule/DatePicker";
+import Navbar from "./component/Schedule/Navbar";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         </Router>
       </div>
       <div className="appointment">
+        <Navbar />
+        <Datepicker />
         <RenderTable />
       </div>
 

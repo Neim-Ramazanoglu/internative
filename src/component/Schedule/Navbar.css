@@ -1,0 +1,19 @@
+.mainDiv {
+  display: flex;
+  position: relative;
+}
+
+.rooms {
+  width: 10%;
+}
+
+.emptyRoom {
+  width: 10%;
+}
+
+.input {
+  display: flex;
+  position: absolute;
+  right: 0;
+  width: 30%;
+}

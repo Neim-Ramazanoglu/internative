@@ -101,7 +101,6 @@ function RenderTable() {
         cumartesi: "",
       },
     ]);
-    // setRoom({ ...rows, id: counter + 1 });
 
     debugger;
   };

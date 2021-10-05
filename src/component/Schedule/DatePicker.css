@@ -1,0 +1,23 @@
+.datePicker {
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 40px;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  width: 106px;
+  height: 40px;
+}
+
+.dayinterval {
+  height: 21px;
+  width: 230px;
+}
+
+.weekintervalpicker {
+  height: 16px;
+  width: 48px;
+}
