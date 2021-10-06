@@ -1,0 +1,23 @@
+.secondPop {
+  background-color: #5372e7;
+  border: 0;
+  color: white;
+  width: 147px;
+  height: 55px;
+  border-radius: 16px;
+  font-size: 16pt;
+}
+
+.secondPop:hover {
+  background-color: white;
+  color: #5372e7;
+}
+
+.secondPopContainer {
+  background-color: #5372e7;
+  color: white;
+  margin: 5px 22px 34px 15px;
+  border-radius: 16px;
+  width: 350px;
+  padding-bottom: 21px;
+}

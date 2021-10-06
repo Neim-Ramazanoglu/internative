@@ -146,9 +146,6 @@ function RenderTable() {
         </thead>
         <button onClick={AddEntryClick}>Oda Ekle</button>
       </table>
-      <p>{displaytodaysdate}</p>
-      <p>{monthName}</p>
-      <p>{dayName}</p>
     </div>
   );
 }

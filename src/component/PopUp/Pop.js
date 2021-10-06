@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Popup from "./PopUp";
 import DayPicker from "../DayPicker/DayPicker";
 import CalendarPopUp from "./CalendarPopUp";
+import styles from "./Pop.css";
+
 function Pop(props) {
   const { dates, setDates, handleResetClick, handleDayClick } = props;
 
@@ -68,14 +70,21 @@ function Pop(props) {
                     <CalendarPopUp
                       content={
                         <>
-                          <DayPicker
-                            dates={dates}
-                            setDates={setDates}
-                            handleDayClick={handleDayClick}
-                            handleResetClick={handleResetClick}
-                          />
-                          <button>İptal</button>
-                          <button onClick={toggleCalendarPopUp}>Tamam</button>
+                          <div className="secondPopContainer">
+                            <DayPicker
+                              dates={dates}
+                              setDates={setDates}
+                              handleDayClick={handleDayClick}
+                              handleResetClick={handleResetClick}
+                            />
+                            <button className="secondPop">İptal</button>
+                            <button
+                              className="secondPop"
+                              onClick={toggleCalendarPopUp}
+                            >
+                              Tamam
+                            </button>
+                          </div>
                         </>
                       }
                       handleClose={toggleCalendarPopUp}

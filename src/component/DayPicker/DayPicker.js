@@ -5,34 +5,7 @@ import { useState } from "react";
 
 function Example(props) {
   const { dates, setDates, handleResetClick, handleDayClick } = props;
-  // static defaultProps = {
-  //   numberOfMonths: 1,
-  // };
 
-  // constructor(props) {
-  //   super(props);
-  //   this.handleDayClick = this.handleDayClick.bind(this);
-  //   this.handleResetClick = this.handleResetClick.bind(this);
-  //   this.state = this.getInitialState();
-  // }
-
-  // getInitialState() {
-  //   return {
-  //     from: undefined,
-  //     to: undefined,
-  //   };
-  // }
-
-  // handleDayClick(day) {
-  //   const range = DateUtils.addDayToRange(day, this.state);
-  //   this.setState(range);
-  // }
-
-  // handleResetClick() {
-  //   this.setState(this.getInitialState());
-  // }
-
-  // const { from, to } = currentDay;
   const modifiers = {
     start: dates.from,
     end: dates.to,
@@ -48,18 +21,37 @@ function Example(props) {
       />
       <style>{`
   .Selectable .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
-    background-color: #f0f8ff !important;
-    color: #4a90e2;
+    background-color: white !important;
+    color: #5372e7 !important;
   }
   .Selectable .DayPicker-Day {
     border-radius: 0 !important;
+    color: white;
+
   }
   .Selectable .DayPicker-Day--start {
     border-radius:6px !important;
+    background-color: white !important;
+    color: #5372e7 !important;
+    
 
   }
+  .Selectable .DayPicker-Day:hover{
+    border-radius:6px !important;
+    background-color: white !important;
+    color: #5372e7 !important;
+  }
+
   .Selectable .DayPicker-Day--end {
     border-radius:6px !important;
+    background-color: white !important;
+    color: #5372e7 !important;
+  }
+
+  .Selectable .DayPicker-Day--selected{
+    border-radius:6px !important;
+    background-color: white !important;
+    color: #5372e7 !important;
   }
 `}</style>
     </div>
