@@ -1,6 +1,7 @@
 .mainDiv {
   display: flex;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .rooms {
@@ -15,5 +16,11 @@
   display: flex;
   position: absolute;
   right: 0;
-  width: 30%;
+  text-align: left;
+  width: 50%;
+  height: 25px;
+  margin-top: 10px;
+  font-size: 8px;
+  background-color: white;
+  padding-top: 8px;
 }

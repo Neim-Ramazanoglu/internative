@@ -1,8 +1,21 @@
 tr,
 th {
-  background-color: sienna;
+  background-color: #e4f2f5;
+  height: 40px;
 }
 table {
   table-layout: fixed;
   width: 100%;
+}
+
+.addButton {
+  background-color: #5372e7;
+  border: 0;
+  color: white;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 12pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

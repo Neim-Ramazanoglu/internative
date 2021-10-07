@@ -10,7 +10,11 @@ function Navbar() {
       <div className="emptyRoom">
         <text>9 Boş Oda</text>
       </div>
-      <input className="input"></input>
+      <input
+        type="text"
+        className="input"
+        placeholder="Aramak istediğiniz kelimeyi girin"
+      />
     </div>
   );
 }

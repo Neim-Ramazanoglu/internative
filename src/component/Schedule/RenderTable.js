@@ -144,7 +144,9 @@ function RenderTable() {
             )
           )}
         </thead>
-        <button onClick={AddEntryClick}>Oda Ekle</button>
+        <button className="addButton" onClick={AddEntryClick}>
+          Oda Ekle
+        </button>
       </table>
     </div>
   );
